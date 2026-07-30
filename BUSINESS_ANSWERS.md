@@ -1,5 +1,6 @@
 Business Question 1
 Which region has the worst on-time delivery performance, and what's actually driving it?
+<img width="208" height="125" alt="Screenshot 2026-07-30 225429" src="https://github.com/user-attachments/assets/90fabcdd-7766-40ec-89d3-bc597610fbbb" />
 Executive Answer
 Based on the analysis-ready shipment dataset (3,444 completed, valid deliveries), Central recorded the lowest observed on-time delivery rate at 48.33%, while South recorded the highest at 52.42%.
 However, the difference between the best- and worst-performing regions is only 4.09 percentage points, and statistical testing found no significant association between region and delivery performance (Chi-square test, p = 0.757).
