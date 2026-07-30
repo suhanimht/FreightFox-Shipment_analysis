@@ -110,6 +110,8 @@ This points to something specific to the customer relationship or their shipment
 
 Phase 1 covered structural cleaning (duplicates, data types, invalid values, business-rule flags) in detail - see the Phase 1 documentation for the full audit trail. Two additional issues surfaced during this EDA phase that materially affect how the Q1-Q3 answers above should be read, and are reported here because they weren't visible until the data was sliced by region and carrier.
 
+![alt text](<Screenshot 2026-07-30 230429.png>)
+
 ## New finding: South region has a systemic delivery-confirmation gap
 
 84.5% of Delivered/Delayed shipments in the South are missing actual_delivery_date, versus exactly 0% in every other region. This is not explained by carrier - the gap is present at 75-94% across all 15 carriers operating in South - which rules out a single carrier's reporting failure and points instead to a regional data pipeline or system-integration issue (e.g., a depot or regional system not feeding delivery confirmations back to the core dataset).
