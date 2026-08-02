@@ -1,12 +1,12 @@
 """
 Shipment Delivery Performance Analytics Dashboard
-FreightFox Take-Home Assignment
-
 Data source of truth: data/shipments_cleaned.csv
 All metrics reproduce the logic documented in the EDA notebook /
 project documentation (analysis_ready flag, delivery_performance field,
 carrier residual analysis, weekly SLA KPI, etc.)
 """
+
+from pathlib import Path
 
 import streamlit as st
 import pandas as pd
@@ -14,6 +14,9 @@ import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
 from scipy import stats
+
+APP_DIR = Path(__file__).resolve().parent
+DEFAULT_DATA_PATH = APP_DIR / "data" / "shipments_cleaned.csv"
 
 # ----------------------------------------------------------------------
 # PAGE CONFIG
@@ -38,7 +41,16 @@ px.defaults.color_discrete_sequence = px.colors.qualitative.Bold
 # DATA LOADING
 # ----------------------------------------------------------------------
 @st.cache_data
-def load_data(path="data/shipments_cleaned.csv"):
+def load_data(path=DEFAULT_DATA_PATH):
+    path = Path(path)
+    if not path.exists():
+        st.error(
+            f"Could not find the data file at `{path}`.\n\n"
+            f"Make sure `shipments_cleaned.csv` is committed to the repo inside "
+            f"a `data/` folder next to `app.py`, and that Git pushed it "
+            f"(large CSVs are sometimes skipped by `.gitignore` or Git LFS limits)."
+        )
+        st.stop()
     df = pd.read_csv(path)
 
     date_cols = [
