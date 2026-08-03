@@ -59,7 +59,7 @@ Additional cuts (distance bands, transport mode, time trends) run to stress-test
 Built a single-file Streamlit app that recomputes every statistic live from `shipments_cleaned.csv` rather than hardcoding numbers, so sidebar filters (region/carrier/mode/date) stay consistent across all six tabs. Chose Streamlit over a no-code builder for full control over the statistical tests shown alongside each chart — the assignment asked for reasoning, not just visuals.
 
 ### Phase 6 — Deploy, GitHub, Executive Summary
-Deployed on Streamlit Community Cloud (fastest free option with GitHub-native CI). Repo structured with a public GitHub history and full documentation. Executive Summary tab added to the dashboard itself as a one-glance entry point for a non-technical stakeholder.
+Deployed on Streamlit Community Cloud. Repo structured with a public GitHub history and full documentation.
 
 ---
 
