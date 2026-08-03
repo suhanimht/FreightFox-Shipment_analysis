@@ -8,10 +8,6 @@ _Dataset: shipments_cleaned.csv | 5,000 shipments, 28 columns_
 
 *Note: For full in depth analysis report refer to the Project_Report in the Reports Folder that has all the methodology, visualization and statistical modelling.*
 
-## Executive Summary
-
-This phase answers the five business questions Ops asked for, using the analytics-ready dataset produced in Phase 1.
-
 # Q1 - Which region has the worst on-time delivery performance, and what's driving it?
 
 ## Method
