@@ -74,10 +74,3 @@ pip install -r Dashboard/requirements.txt
 streamlit run Dashboard/app.py
 ```
 App opens at `http://localhost:8501`.
-
-## Deploy (Streamlit Community Cloud)
-
-1. Push repo to GitHub (public).
-2. [share.streamlit.io](https://share.streamlit.io) → **New app** → select repo/branch.
-3. Main file path: `Dashboard/app.py`
-4. Deploy — no secrets or database required, app reads the local CSV directly.
