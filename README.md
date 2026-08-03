@@ -48,7 +48,7 @@ Set up a local Python virtual environment and repo structure before touching the
 Each question followed the same evidence chain: descriptive stats → visualization → statistical test → business interpretation. No conclusion was drawn from a single chart or ranking alone.
 1. **Regional performance:** Central lowest, South highest — but the gap is small and not statistically significant (χ² p = 0.757). Carrier-level differences within regions are far larger than between them.
 2. **Freight cost vs distance:** Weak overall fit (R²=0.09) traced to one carrier's (CARR_07) systematically inflated pricing; excluding it lifts R² to 0.54.
-3. **Customer delays:** Some customers look worse descriptively, but ANOVA/Kruskal-Wallis found no statistically significant customer effect — delays are shipment-level, not customer-level.
+3. **Customer delays:** Some customers look worse descriptively, but ANOVA/Kruskal-Wallis found no statistically significant customer effect.
 4. **Data quality:** Documented every issue and the reasoning for preserving vs. flagging vs. removing (full table in BUSINESS_ANSWERS.md).
 5. **Weekly KPI:** Recommended Weekly SLA Compliance Rate, paired with a Data Completeness Rate as a trust gate on the primary metric.
 
