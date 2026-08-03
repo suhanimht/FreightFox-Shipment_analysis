@@ -118,15 +118,15 @@ This points to something specific to the customer relationship or their shipment
 The data quality assessment was conducted in two complementary phases:
 Phase 1 – Initial Data Audit
 A comprehensive audit of the raw dataset was performed to evaluate:
--Dataset structure
--Missing values
--Duplicate records
--Data types
--Invalid numeric values
--Text consistency
--Business rule validation
--Date chronology
--Outlier detection
+- Dataset structure
+- Missing values
+- Duplicate records
+- Data types
+- Invalid numeric values
+- Text consistency
+- Business rule validation
+- Date chronology
+- Outlier detection
 
 | Issue                             | Evidence                                                                                                              | Business Risk                                                       | Cleaning Decision                                       | Business Impact                                                            |
 | --------------------------------- | --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------- | -------------------------------------------------------------------------- |
