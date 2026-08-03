@@ -12,12 +12,6 @@ _Dataset: shipments_cleaned.csv | 5,000 shipments, 28 columns_
 
 This phase answers the five business questions Ops asked for, using the analytics-ready dataset produced in Phase 1.
 
-- Central is the region with the worst, most reliably-measured delivery performance: a 15.9% delay rate (vs. 14.1% national average) that persists across almost every carrier, pointing to a regional operating issue rather than one bad partner.
-- Freight cost and distance are strongly linear once you control for shipment mode (r ≈ 0.98 within FTL/LTL/PTL) - but CARR_07 breaks that relationship completely, billing roughly 10× the per-km rate of every other carrier on identical lanes.
-- Delay is concentrated in a small set of customers whose delay rate is far higher than their region/carrier mix would predict - led by CUST_066 at 40% (vs. an expected 14%) - meaning the driver is account-specific, not network-wide.
-- The single biggest data-quality finding in this phase: South region is missing actual_delivery_date on 84.5% of Delivered/Delayed shipments, vs. 0% everywhere else - a regional tracking gap that makes South's on-time rate un-measurable until it's fixed.
-- Recommended weekly metric: Weekly On-Time Delivery Rate, tracked alongside a Delivery-Data Completeness rate so a reporting gap is never mistaken for a performance win.
-
 # Q1 - Which region has the worst on-time delivery performance, and what's driving it?
 
 ## Method
