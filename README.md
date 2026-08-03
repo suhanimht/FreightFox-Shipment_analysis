@@ -1,4 +1,3 @@
-# FreightFox-Shipment_analysis
 # Shipment Delivery Performance Analytics
 
 An end-to-end analytics project on a 5,000-record freight shipment dataset — from raw data audit to a deployed interactive dashboard — answering 5 core operations questions for the business.
