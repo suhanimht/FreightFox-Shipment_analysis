@@ -172,6 +172,8 @@ As detailed in Q2, CARR_07 bills roughly 10x the per-km rate of every other carr
 
 **Why it matters:** Both new findings are exactly the kind of issue that produces a confidently wrong answer if missed: without the South check, South would have looked like a strong region; without the CARR_07 check, the freight-cost/distance relationship would have looked weak and unusable.
 
+**Philosophy throughout:** preserve original records, never impute or delete business events, flag uncertainty instead, and only exclude records from the specific analyses where they would produce invalid metrics. This is why the raw dataset (5,000 shipments) is still used for volume/pricing questions, while the smaller `analysis_ready` subset (3,444) is used only for SLA/delay questions.
+
 **Next steps:** Escalate the South data gap to whoever owns the regional tracking/TMS integration - this is an operational fix, not an analytics one; escalate CARR_07's billing pattern to finance/procurement for invoice verification before the next payment cycle.
 
 # Q5 - If you could track exactly one metric weekly to catch delivery problems early, what would it be?
