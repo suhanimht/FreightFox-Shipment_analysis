@@ -102,10 +102,7 @@ Statistical validation using Levene's Test, One-Way ANOVA, Kruskal-Wallis Test, 
 Successive operational drill-downs found no evidence that higher customer delays were consistently associated with a particular carrier, region, transport mode, or distance band. While individual combinations occasionally showed higher delays, these patterns were based on small shipment counts and did not remain consistent across operational segments.
 A shipment-level review of CUST_119 further validated these findings. Despite above-average delays, shipments were distributed across multiple carriers, regions, transport modes, distance bands, and origin–destination pairs, with no dominant operational pattern or recurring shipment corridor explaining the customer's overall performance.
 
-Several customers exhibited descriptively higher average delivery delays and late rates than the network average.
-These differences were not explained by shipment volume, carrier allocation, geographic region, transport mode, shipment distance, or shipping corridor.
-Shipment-level investigation of a representative high-delay customer (CUST_119) found no recurring operational pattern responsible for poorer performance.
-Statistical testing confirmed that delivery delays do not differ significantly across customers.
+** Concluding Statement** A handful of customers (e.g. the highest-delay accounts in the dataset) show descriptively higher average delay and late rates than the network average. But drilling into carrier mix, region mix, transport mode, and distance band for those customers shows no dominant pattern — their shipments are spread across many carriers and regions with no recurring corridor. Formal statistical testing (one-way ANOVA and Kruskal-Wallis across customers with sufficient volume) found the differences are **not statistically significant**, with an effect size near zero.
 
 **Is it carrier- or region-driven?:** No. shipments are spread across all 5 regions and no single carrier handles more than the other - the same pattern holds for the other flagged customers. If a carrier or region were the true cause, delay would concentrate there; instead it travels with the customer regardless of who ships it or where.
 
