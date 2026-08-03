@@ -1,5 +1,7 @@
 """
 Shipment Delivery Performance Analytics Dashboard
+FreightFox Take-Home Assignment
+
 Data source of truth: data/shipments_cleaned.csv
 All metrics reproduce the logic documented in the EDA notebook /
 project documentation (analysis_ready flag, delivery_performance field,
@@ -106,7 +108,11 @@ mask = (
 )
 if len(date_range) == 2:
     start, end = pd.to_datetime(date_range[0]), pd.to_datetime(date_range[1])
-    mask &= df["booking_date"].between(start, end)
+    in_range = df["booking_date"].between(start, end)
+    missing_date = df["booking_date"].isna()
+    # Keep shipments with no booking_date instead of silently dropping them —
+    # they're "unknown", not "outside the selected range".
+    mask &= (in_range | missing_date)
 
 fdf = df[mask].copy()               # filtered, full (operational) dataset
 ready = fdf[fdf["analysis_ready"]].copy()   # filtered, SLA-eligible dataset
