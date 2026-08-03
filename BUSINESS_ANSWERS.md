@@ -73,7 +73,7 @@ Finally, freight cost outliers were identified using the IQR rule, allowing the 
 | FTL only                     | 0.985               | 0.97   | Near-perfect linear relationship                                      |
 | LTL only                     | 0.985               | 0.97   | Near-perfect linear relationship                                      |
 | PTL only                     | 0.984               | 0.97   | Near-perfect linear relationship                                      |
-| All modes, excluding CARR_07 | 0.73                | 0.53   | Strong once the outlier carrier is removed                            |
+| All modes, excluding CARR_07 | 0.73                | 0.54   | Strong once the outlier carrier is removed                            |
 
 **Finding:** Yes - freight cost is very tightly, linearly tied to distance within each shipment mode (r ≈ 0.98). The apparent weak overall relationship was an artifact of mixing three different cost structures and one carrier's pricing anomaly into a single scatter.
 
